@@ -5,7 +5,7 @@
     --cosmic-base: #0a0a0a;
     --lounge-gold: rgb(241, 239, 243);
     --deep-mauve: #6a1b9a;
-    --burnt-orange: #e67e22;
+    --burnt-orange:#5624e1;
     --teal-groove: #2e8b57;
     --panel-bg: rgba(20, 25, 45, 0.95);
     --text-primary: #f8edeb;
@@ -577,3 +577,4 @@ li {
         width: auto;
     }
 }
+
