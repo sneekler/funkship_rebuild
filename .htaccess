@@ -1,0 +1,6 @@
+Options -Indexes
+ErrorDocument 404 /customerrors/404.html
+
+order allow,deny
+deny from 89.144.57.86
+allow from all

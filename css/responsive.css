@@ -113,7 +113,94 @@ body {
     color: #666;
 }
 
-/* responsive tweaks */
+/* ---------- sticky audio player ---------- */
+#funkship-player {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    width: 280px;
+    background: #1a0a2e;
+    border: 1px solid #7b2ff7;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 0 18px rgba(123,47,247,.5), 0 0 40px rgba(0,255,128,.15);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #e0d4f7;
+    transition: opacity .3s, transform .3s;
+}
+#funkship-player.fp-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+#fp-close-btn {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 1.1rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+#fp-close-btn:hover { color: #ff4466; }
+.fp-track-info {
+    text-align: center;
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #00ff88;
+    text-shadow: 0 0 6px rgba(0,255,136,.6);
+}
+.fp-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.fp-btn {
+    background: none;
+    border: 1px solid #7b2ff7;
+    color: #c9b0ff;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, box-shadow .2s;
+}
+.fp-btn:hover {
+    background: #7b2ff7;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(123,47,247,.7);
+}
+.fp-btn.fp-play {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+    border-color: #00ff88;
+    color: #00ff88;
+}
+.fp-btn.fp-play:hover {
+    background: #00ff88;
+    color: #1a0a2e;
+    box-shadow: 0 0 10px rgba(0,255,136,.7);
+}
+#fp-volume {
+    width: 60px;
+    accent-color: #7b2ff7;
+    cursor: pointer;
+}
+
+/* ---------- responsive tweaks ---------- */
 @media (max-width: 600px) {
     .site-content { flex-direction: column; }
     .sidebar { order: -1; flex: 1 1 auto; }
@@ -125,4 +212,11 @@ body {
         display: none;
     }
     .main-nav.open ul { display: flex; }
+
+    #funkship-player {
+        left: 0.5rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        width: auto;
+    }
 }
