@@ -46,34 +46,77 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   });
   </script>
 
-  <main class="main">
+  <main class="main main--home">
+    <!-- Hero: full-width band, headline + tagline + image -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <h1 class="hero__headline">Greetings from the Funkship</h1>
+          <p class="hero__tagline">Music and times of Pharaoh — inter-planetary home for the funk.</p>
+        </div>
+        <div class="hero__media">
+          <img src="images/graphics/dontFearFunk_loRes.jpg" alt="Don't Fear The Funk!" width="200" height="462" class="hero__img">
+        </div>
+      </div>
+    </section>
 
+    <!-- Hot Topic: distinct section block (text + video side by side) -->
+    <section class="page-section page-section--highlight">
+      <div class="hot-topic__inner">
+        <div class="section__content hot-topic__text">
+          <h2>Hot Topic: Barack's Gonna Take Ant's Money!</h2>
+          <p>Just finished and uploaded my video for &quot;Barack's Gonna Take Ant's Money&quot; to YouTube. For more info visit my <a href="barack/index.html">Barack's Gonna Take Ant's Money</a> page. <span class="detail style3">Warning: Funky Language</span></p>
+        </div>
+        <div class="video-wrap hot-topic__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AK3ygrbLyq0?si=vwXkOrjL1l8JcYhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
 
-						<h1>Greetings from the Funkship </h1>
-			<p><img src="images/graphics/dontFearFunk_loRes.jpg" alt="Don't Fear The Funk!" width="200" height="462" class="fltrt"><!--This is my  inter-planetary home, bringing you the music and times of Pharaoh. Within these pages you will have access to the inter-workings of my  brain, a selection of both old and new music from Pharaoh, and links to  a few other Funkateers.--></p>
-			
-			<h2>Hot Topic: Barack's Gonna Take Ant's Money!</h2>
-            <p>Just finished and uploaded my video for &quot;Barack's Gonna Take Ant's Money&quot; to YouTube last night. For more info visit my <a href="barack/index.html">Barack's Gonna Take Ant's Money</a> page. <span class="detail style3"><br>
-			Warning: Funky Language</span></p>
-			<h2>The Funkalizer</h2>
-			<p>If it's music you came for, please open the <a href="javascript:;" onClick="MM_openBrWindow('../funkalizer.html','','width=380,height=170')">Funkalizer</a>. There you can listen to selections I have recorded over the years. Much of this music is also available on <noindex><a href="http://www.soundclick.com/pharaohnate">SoundClick.com</a></noindex> and <noindex><a href="http://www.myspace.com/pharaohnate">MySpace</a></noindex>. </p>
-			<h2>Pharaoh</h2>
-			<p>While exploring the grooves you will quickly learn that my style of music will wander even outside the realm of Funk, but that's alright. Take a look at my biography on the <a href="pharaoh.html">Pharaoh</a> page for a better understanding of where my musical roots lie.</p>
-			<h2>Productions</h2>
-			<p>In addition to writing and recording my own music, I have had the opportunity to produce, co-write and arrange music with a few good friends, such as				<noindex><a href="http://www.elliotScott.com">
-			Elliot Scott</a></noindex> and <noindex><a href="http://www.soundclick.com/themietusbros">The Mietus Bros</a></noindex>. Please travel over to my <a href="productions.html">Productions</a> page for more juice on them.</p>
-			<h2>Funkship Blog</h2>
-			<p>I have traveled extensively throughout the Funkernet searching out other True Funk Soldiers and funky things for you to dig up on. I log my journeys in the <noindex><a href="http://www.funkship.blogspot.com">Funkship Blog</a></noindex>. There you will encounter a bevy of strange folks, hot musical talent, or any other thing I find interesting. I hope you like it.</p>
-			<h2>Prophets</h2>
-			<p>In the <a href="prophets.html">Prophets</a> area I link to some musician friends &amp; family, or other groovers I would like you to meet. Don't be shy, just go and say &quot;hi&quot;. We all friends here, ain't we?</p>
-			<p>Lastly, if you need to contact me, turn on hailing frequencies and spit into my mic on the <a href="contact.html">Contact</a> page. I promise that I will hear you loud and clear.</p>
-			<p>Until then my friends, Funk On and Peace Out.</p>
+    <!-- Cards grid: Pharaoh, Productions, Prophets, Funkalizer, Blog, Contact -->
+    <section class="page-section">
+      <h2 class="section-title">Explore</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3 class="card__title">Pharaoh</h3>
+          <p class="card__excerpt">Biography and musical roots — where the groove began.</p>
+          <a href="pharaoh.html" class="card__link">Learn more</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Productions</h3>
+          <p class="card__excerpt">Co-writes and productions with Elliot Scott, The Mietus Bros, and more.</p>
+          <a href="productions.html" class="card__link">Learn more</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Prophets</h3>
+          <p class="card__excerpt">Musician friends, family, and fellow funk monsters.</p>
+          <a href="prophets.html" class="card__link">Meet them</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Funkalizer</h3>
+          <p class="card__excerpt">Listen to selections recorded over the years. Also on SoundClick and MySpace.</p>
+          <a href="javascript:;" onclick="MM_openBrWindow('funkalizer.html','','width=380,height=170')" class="card__link">Listen</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Funkship Blog</h3>
+          <p class="card__excerpt">True Funk Soldiers, hot talent, and funky finds from the Funkernet.</p>
+          <a href="http://www.funkship.blogspot.com" class="card__link">Read more</a>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Contact</h3>
+          <p class="card__excerpt">Turn on hailing frequencies — I promise to hear you loud and clear.</p>
+          <a href="contact.html" class="card__link">Get in touch</a>
+        </article>
+      </div>
+    </section>
 
-</main>
-		<!--<div id="footer">
-			<p>Footer</p>
-		</div>-->
-	<!-- end #container --></div>
+    <section class="page-section page-section--footer">
+      <div class="section__content section__content--narrow">
+        <p>Until then my friends, Funk On and Peace Out.</p>
+      </div>
+    </section>
+  </main>
+</div>
 <!-- Google Analytics snippet removed; replace with modern analytics if required.
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -174,4 +217,3 @@ pageTracker._trackPageview();
 <script src="js/audio-player.js"></script>
 </body>
 <!-- InstanceEnd --></html>
-
